@@ -1,5 +1,5 @@
 {
-    "baseUrl": "https://localhost:9999",
+    "baseUrl": "http://localhost:9999",
     "ignoreTestFiles": ["*.js", "*.md"],
     "integrationFolder": "cypress/acceptance",
     "reporter": "junit",
