@@ -1,0 +1,12 @@
+{
+    "baseUrl": "https://localhost:9999",
+    "ignoreTestFiles": ["*.js", "*.md"],
+    "integrationFolder": "cypress/acceptance",
+    "reporter": "junit",
+    "reporterOptions": {
+        "mochaFile": "test-results/test-output-[hash].xml"
+     },
+    "chromeWebSecurity": false,
+    "video": false
+}
+

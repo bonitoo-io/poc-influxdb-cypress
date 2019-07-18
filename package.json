@@ -1,0 +1,26 @@
+{
+  "name": "poc-influxdb-cypress",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "influx:setup": "cd scripts && ./influxdb2_community_test_env.sh setup-qa && cd -",
+    "influx:stop": "./scripts/influxdb2_community_test_env.sh stop",
+    "influx:clean": "./scripts/influxdb2_community_test_env.sh clean",
+    "test": "cypress run",
+    "test:headed": "cypress run --headed"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cucumber": "^5.1.0",
+    "cypress": "^3.4.0",
+    "cypress-cucumber-preprocessor": "^1.12.0",
+    "fs-extra": "^8.1.0",
+    "glob": "^7.1.4",
+    "junit-viewer": "^4.11.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
